@@ -1212,3 +1212,13 @@ body[data-theme="eid"] .hero-bg-pattern {
   display: none !important;
 }
 
+/* Remove floating festival decorations and scroll indicator */
+.hero-emojis,
+.float-emoji,
+#particles,
+.scroll-indicator,
+#scrollProgress {
+  display: none !important;
+}
+
+
