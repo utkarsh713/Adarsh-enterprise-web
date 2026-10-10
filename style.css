@@ -1389,6 +1389,33 @@ body[data-theme="eid"] .hero-bg-pattern {
     left: 50% !important;
   }
 }
+
+/* Shift hero content further left */
+@media (min-width: 769px) {
+  #home .hero-content {
+    transform: translateX(-110px) !important;
+  }
+}
+
+/* Keep stats centered in their current bottom row */
+@media (min-width: 769px) {
+  #home .hero-stats {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* Keep mobile layout unchanged */
+@media (max-width: 768px) {
+  #home .hero-content {
+    transform: none !important;
+  }
+
+  #home .hero-stats {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
    
 
 
