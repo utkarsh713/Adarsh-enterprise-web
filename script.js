@@ -306,7 +306,7 @@
   });
 
   // Scroll progress and back-to-top button.
-  const scrollProgress = document.querySelector("#scrollProgress");
+  
   const backToTop = document.querySelector("#backToTop");
   let scrollUpdatePending = false;
   function updateScrollDecor() {
