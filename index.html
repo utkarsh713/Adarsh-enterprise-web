@@ -15,6 +15,10 @@
 
   <!-- Animated background -->
   <div id="particles" aria-hidden="true"></div>
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <button id="celebrateBtn" class="celebrate-button" type="button">Celebrate ✨</button>
+  <div id="celebrateMessage" class="celebrate-message" role="status" aria-live="polite"></div>
+  <button id="backToTop" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   <div class="theme-toolbar" aria-label="Festival theme selector">
     <span>Festival Theme</span>
     <button class="theme-btn active" data-theme="default" type="button">Teal</button>
@@ -34,7 +38,6 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#festivals">Festivals</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#countdown">Countdown</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#why-us">Why Us</a></li>
         <li><a href="#about">About</a></li>
@@ -97,24 +100,6 @@
     <div class="scroll-indicator">
       <span>Scroll Down</span>
       <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ============ FESTIVAL COUNTDOWN ============ -->
-  <section id="countdown" class="countdown-section">
-    <div class="section-header" data-aos="fade-up">
-      <span class="section-tag">Save the Date</span>
-      <h2>Festival <span class="accent">Countdown</span></h2>
-      <p>Get ready for the next celebration.</p>
-    </div>
-    <div class="countdown-panel" data-aos="zoom-in">
-      <div class="countdown-copy"><span class="countdown-icon" id="countdownIcon">🪔</span><div><h3 id="nextFestivalName">Next Festival</h3><p id="countdownDate">Counting down to the celebration</p></div></div>
-      <div class="countdown-clock">
-        <div><strong id="cdDays">00</strong><span>Days</span></div>
-        <div><strong id="cdHours">00</strong><span>Hours</span></div>
-        <div><strong id="cdMinutes">00</strong><span>Minutes</span></div>
-        <div><strong id="cdSeconds">00</strong><span>Seconds</span></div>
-      </div>
     </div>
   </section>
 
