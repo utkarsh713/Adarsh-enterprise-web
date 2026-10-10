@@ -1556,6 +1556,13 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
+/* Move stats lower on mobile only */
+@media screen and (max-width: 768px) {
+  #home.hero .hero-stats {
+    bottom: 2px !important;
+  }
+}
+
 
 
    
