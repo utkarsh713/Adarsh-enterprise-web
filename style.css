@@ -1471,6 +1471,13 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
+/* Hide only hero buttons on mobile */
+@media screen and (max-width: 768px) {
+  #home .hero-buttons {
+    display: none !important;
+  }
+}
+
 
 
 
