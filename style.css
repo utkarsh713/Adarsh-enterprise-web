@@ -1221,4 +1221,64 @@ body[data-theme="eid"] .hero-bg-pattern {
   display: none !important;
 }
 
+/* Move complete hero content to the right */
+@media (min-width: 769px) {
+  #home .hero-content {
+    margin-left: auto !important;
+    margin-right: 5% !important;
+    text-align: right !important;
+    align-items: flex-end;
+  }
+
+  #home .hero-badge {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  #home .hero-title {
+    text-align: right !important;
+  }
+
+  #home .hero-tagline {
+    text-align: right !important;
+  }
+
+  #home .hero-buttons {
+    justify-content: flex-end !important;
+  }
+
+  #home .hero-stats {
+    justify-content: flex-end !important;
+  }
+}
+
+/* Keep mobile layout readable */
+@media (max-width: 768px) {
+  #home .hero-content {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+  }
+
+  #home .hero-badge {
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 0.75rem;
+  }
+
+  #home .hero-title,
+  #home .hero-tagline {
+    text-align: right !important;
+  }
+
+  #home .hero-buttons {
+    justify-content: flex-end !important;
+  }
+
+  #home .hero-stats {
+    justify-content: flex-end !important;
+  }
+}
+
+
 
