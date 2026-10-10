@@ -1471,12 +1471,7 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
-/* Hide only hero buttons on mobile */
-@media screen and (max-width: 768px) {
-  #home .hero-buttons {
-    display: none !important;
-  }
-}
+
 
 /* Move only hero content slightly left */
 @media (min-width: 769px) {
@@ -1494,7 +1489,12 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
-
+/* Hide only hero buttons on mobile */
+@media screen and (max-width: 768px) {
+  #home .hero-buttons {
+    display: none !important;
+  }
+}
 
 
    
