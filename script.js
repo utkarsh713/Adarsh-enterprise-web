@@ -187,42 +187,6 @@
     }
   }));
 
-  // Countdown: calculates the next upcoming occurrence each year.
-  // Dates use common Indian festival dates; lunar dates are approximate and should be confirmed yearly.
-  const festivalDates = [
-    { name: "Independence Day", month: 7, day: 15, icon: "🇮🇳" },
-    { name: "Diwali", month: 9, day: 20, icon: "🪔" },
-    { name: "Republic Day", month: 0, day: 26, icon: "🇮🇳" },
-    { name: "Holi", month: 2, day: 4, icon: "🎨" },
-    { name: "Eid", month: 2, day: 20, icon: "🌙" }
-  ];
-  const findNextFestival = now => {
-    const candidates = festivalDates.map(f => {
-      let date = new Date(now.getFullYear(), f.month, f.day, 0, 0, 0);
-      if (date <= now) date = new Date(now.getFullYear() + 1, f.month, f.day, 0, 0, 0);
-      return { ...f, date };
-    });
-    return candidates.sort((a, b) => a.date - b.date)[0];
-  };
-  let countdownTarget = findNextFestival(new Date());
-  const updateCountdown = () => {
-    const now = new Date();
-    if (now >= countdownTarget.date) countdownTarget = findNextFestival(now);
-    const diff = Math.max(0, countdownTarget.date - now);
-    const values = {
-      cdDays: Math.floor(diff / 86400000),
-      cdHours: Math.floor(diff / 3600000) % 24,
-      cdMinutes: Math.floor(diff / 60000) % 60,
-      cdSeconds: Math.floor(diff / 1000) % 60
-    };
-    Object.entries(values).forEach(([id, value]) => { const el = document.getElementById(id); if (el) el.textContent = String(value).padStart(2, "0"); });
-    if ($("#nextFestivalName")) $("#nextFestivalName").textContent = countdownTarget.name;
-    if ($("#countdownIcon")) $("#countdownIcon").textContent = countdownTarget.icon;
-    if ($("#countdownDate")) $("#countdownDate").textContent = `Countdown to ${countdownTarget.date.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}`;
-  };
-  updateCountdown();
-  window.setInterval(updateCountdown, 1000);
-
   // Gallery lightbox
   const lightbox = $("#lightbox");
   const lightboxImage = $("#lightboxImage");
@@ -273,4 +237,91 @@
       }
     });
   });
+
+  // Festive click effects: limited particles, short animations.
+  const motionReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const lowPowerMode = window.matchMedia("(max-width: 600px)").matches ||
+    (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
+  const burstPalette = {
+    default: ["#85B8BC", "#BCE8E9", "#E7D6A2", "#F8FFFF"],
+    diwali: ["#E7D6A2", "#F8E7B6", "#BCE8E9", "#FFFFFF"],
+    holi: ["#85B8BC", "#E7D6A2", "#BCE8E9", "#D8C6E8"],
+    eid: ["#85B8BC", "#BCE8E9", "#E7D6A2", "#F8FFFF"]
+  };
+  const getBurstColors = () => burstPalette[document.body.dataset.theme] || burstPalette.default;
+  let lastBurstAt = 0;
+
+  function createFestiveBurst(x, y, count = 14) {
+    if (motionReduced || Date.now() - lastBurstAt < 240) return;
+    lastBurstAt = Date.now();
+    const colors = getBurstColors();
+    const symbols = ["✦", "✧", "✨", "·", "♥", "🎊"];
+    const amount = lowPowerMode ? Math.min(7, count) : Math.min(18, count);
+    for (let i = 0; i < amount; i++) {
+      const particle = document.createElement("span");
+      particle.className = "festive-burst-particle";
+      particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+      particle.style.left = `${x}px`;
+      particle.style.top = `${y}px`;
+      particle.style.color = colors[Math.floor(Math.random() * colors.length)];
+      particle.style.fontSize = `${11 + Math.random() * 10}px`;
+      particle.style.setProperty("--dx", `${Math.round((Math.random() - 0.5) * 150)}px`);
+      particle.style.setProperty("--dy", `${Math.round((Math.random() - 0.5) * 130 - 16)}px`);
+      particle.style.setProperty("--rot", `${Math.round(Math.random() * 240 - 120)}deg`);
+      document.body.appendChild(particle);
+      window.setTimeout(() => particle.remove(), 950);
+    }
+  }
+
+  // Festive controls trigger a brief burst; empty hero background gets a few sparkles.
+  document.addEventListener("click", event => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const control = target.closest(".btn, .theme-btn, .filter-btn, .product-enquire, .card-btn, #celebrateBtn");
+    if (control) {
+      createFestiveBurst(event.clientX, event.clientY, control.id === "celebrateBtn" ? 18 : 12);
+      return;
+    }
+    if (target === document.body || target.id === "home" || target.classList.contains("hero-bg-pattern")) {
+      createFestiveBurst(event.clientX, event.clientY, 8);
+    }
+  });
+
+  // Celebrate button: short message, confetti and cooldown.
+  const celebrateBtn = document.querySelector("#celebrateBtn");
+  const celebrateMessage = document.querySelector("#celebrateMessage");
+  let celebrateCooldown = false;
+  let celebrateMessageTimer = 0;
+  celebrateBtn?.addEventListener("click", event => {
+    if (celebrateCooldown) return;
+    celebrateCooldown = true;
+    createFestiveBurst(event.clientX, event.clientY, 18);
+    if (celebrateMessage) {
+      celebrateMessage.textContent = "Let Every Celebration Shine! ✨";
+      celebrateMessage.classList.add("show");
+      window.clearTimeout(celebrateMessageTimer);
+      celebrateMessageTimer = window.setTimeout(() => celebrateMessage.classList.remove("show"), 2400);
+    }
+    window.setTimeout(() => { celebrateCooldown = false; }, 900);
+  });
+
+  // Scroll progress and back-to-top button.
+  const scrollProgress = document.querySelector("#scrollProgress");
+  const backToTop = document.querySelector("#backToTop");
+  let scrollUpdatePending = false;
+  function updateScrollDecor() {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    if (scrollProgress) scrollProgress.style.width = `${maxScroll > 0 ? window.scrollY / maxScroll * 100 : 0}%`;
+    if (backToTop) backToTop.classList.toggle("visible", window.scrollY > 450);
+    scrollUpdatePending = false;
+  }
+  window.addEventListener("scroll", () => {
+    if (!scrollUpdatePending) {
+      scrollUpdatePending = true;
+      window.requestAnimationFrame(updateScrollDecor);
+    }
+  }, { passive: true });
+  updateScrollDecor();
+  backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: motionReduced ? "auto" : "smooth" }));
+
 })();
