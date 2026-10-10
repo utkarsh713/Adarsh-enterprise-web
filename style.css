@@ -1416,6 +1416,59 @@ body[data-theme="eid"] .hero-bg-pattern {
     transform: translateX(-50%) !important;
   }
 }
+
+/* ===== FORCE HERO CONTENT TO THE LEFT ===== */
+
+@media (min-width: 769px) {
+  #home.hero {
+    display: block !important;
+    text-align: left !important;
+  }
+
+  #home.hero .hero-content {
+    position: relative !important;
+    left: -150px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: min(760px, 72vw) !important;
+    max-width: 760px !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  #home.hero .hero-badge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #home.hero .hero-title,
+  #home.hero .hero-tagline {
+    text-align: center !important;
+  }
+
+  #home.hero .hero-buttons {
+    justify-content: center !important;
+  }
+
+  /* Stats stay centered */
+  #home.hero .hero-stats {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* Mobile stays unchanged */
+@media (max-width: 768px) {
+  #home.hero .hero-content {
+    position: relative !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+  }
+}
    
 
 
