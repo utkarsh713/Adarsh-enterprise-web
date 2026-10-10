@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adarsh Enterprise – Festival & Party Items</title>
+  <title>Adarsh Enterprise | Festival & Party Supplies</title>
+  <meta name="theme-color" content="#85B8BC"/>
+  <meta name="description" content="Discover festival decorations, party supplies and celebration essentials at Adarsh Enterprise, Saraimeer, Azamgarh."/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -11,8 +13,15 @@
 </head>
 <body>
 
-  <!-- Floating particles background -->
-  <div id="particles"></div>
+  <!-- Animated background -->
+  <div id="particles" aria-hidden="true"></div>
+  <div class="theme-toolbar" aria-label="Festival theme selector">
+    <span>Festival Theme</span>
+    <button class="theme-btn active" data-theme="default" type="button">Teal</button>
+    <button class="theme-btn" data-theme="diwali" type="button">🪔 Diwali</button>
+    <button class="theme-btn" data-theme="holi" type="button">🎨 Holi</button>
+    <button class="theme-btn" data-theme="eid" type="button">🌙 Eid</button>
+  </div>
 
   <!-- ============ NAVBAR ============ -->
   <nav id="navbar">
@@ -25,8 +34,11 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#festivals">Festivals</a></li>
         <li><a href="#products">Products</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#why-us">Why Us</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#location">Location</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -85,6 +97,24 @@
     <div class="scroll-indicator">
       <span>Scroll Down</span>
       <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============ FESTIVAL COUNTDOWN ============ -->
+  <section id="countdown" class="countdown-section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Save the Date</span>
+      <h2>Festival <span class="accent">Countdown</span></h2>
+      <p>Get ready for the next celebration.</p>
+    </div>
+    <div class="countdown-panel" data-aos="zoom-in">
+      <div class="countdown-copy"><span class="countdown-icon" id="countdownIcon">🪔</span><div><h3 id="nextFestivalName">Next Festival</h3><p id="countdownDate">Counting down to the celebration</p></div></div>
+      <div class="countdown-clock">
+        <div><strong id="cdDays">00</strong><span>Days</span></div>
+        <div><strong id="cdHours">00</strong><span>Hours</span></div>
+        <div><strong id="cdMinutes">00</strong><span>Minutes</span></div>
+        <div><strong id="cdSeconds">00</strong><span>Seconds</span></div>
+      </div>
     </div>
   </section>
 
@@ -226,13 +256,25 @@
       <h2>Popular <span class="accent">Products</span></h2>
       <p>Browse our best-selling categories loved by thousands of customers</p>
     </div>
-    <div class="products-grid">
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="0"><div class="product-icon">🪔</div><h4>Diyas &amp; Candles</h4><p>Traditional clay diyas, designer candles, and floating lights.</p></div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="80"><div class="product-icon">💡</div><h4>LED Lights</h4><p>String lights, fairy lights, and RGB LED strips for every mood.</p></div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="160"><div class="product-icon">🎈</div><h4>Balloons</h4><p>Latex, foil, and printed balloons in all shapes and sizes.</p></div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="0"><div class="product-icon">🏮</div><h4>Toys</h4><p>Taddy, Guns, and cars.</p></div>
-      <div class="product-card" data-aos="zoom-in" data-aos-delay="80"><div class="product-icon">🎁</div><h4>Gift Items</h4><p>Gift boxes, hampers, and wrapping accessories for all festivals.</p></div>
-      </div> 
+    <div class="catalogue-tools">
+      <label class="search-box"><i class="fas fa-search"></i><input id="productSearch" type="search" placeholder="Search products..." aria-label="Search products"/></label>
+      <div class="filter-chips" role="group" aria-label="Filter products">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="decor" type="button">Decorations</button>
+        <button class="filter-btn" data-filter="lighting" type="button">Lighting</button>
+        <button class="filter-btn" data-filter="party" type="button">Party</button>
+        <button class="filter-btn" data-filter="gifts" type="button">Gifts</button>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <article class="product-card" data-category="decor" data-name="Diyas Candles"><div class="product-icon">🪔</div><h4>Diyas &amp; Candles</h4><p>Traditional diyas, decorative candles and festive lights.</p><button class="product-enquire" data-product="Diyas & Candles">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+      <article class="product-card" data-category="lighting" data-name="LED Lights"><div class="product-icon">💡</div><h4>LED Lights</h4><p>String lights, fairy lights and decorative lighting.</p><button class="product-enquire" data-product="LED Lights">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+      <article class="product-card" data-category="party" data-name="Balloons"><div class="product-icon">🎈</div><h4>Balloons</h4><p>Latex, foil and printed balloons in varied styles.</p><button class="product-enquire" data-product="Balloons">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+      <article class="product-card" data-category="party" data-name="Toys Games"><div class="product-icon">🧸</div><h4>Toys &amp; Games</h4><p>Fun toys, toy cars and party favourites.</p><button class="product-enquire" data-product="Toys & Games">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+      <article class="product-card" data-category="gifts" data-name="Gift Items"><div class="product-icon">🎁</div><h4>Gift Items</h4><p>Gift boxes, hampers and wrapping accessories.</p><button class="product-enquire" data-product="Gift Items">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+      <article class="product-card" data-category="decor" data-name="Banners Flags"><div class="product-icon">🏮</div><h4>Banners &amp; Decorations</h4><p>Festival banners, hanging decor and celebration accessories.</p><button class="product-enquire" data-product="Banners & Decorations">Enquire on WhatsApp <i class="fab fa-whatsapp"></i></button></article>
+    </div>
+    <p id="noProducts" class="empty-state" hidden>No products match your search.</p> 
   </section>
 
   <!-- ============ WHY CHOOSE US ============ -->
@@ -286,6 +328,24 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-header" data-aos="fade-up"><span class="section-tag">Moments & Details</span><h2>Festival <span class="accent">Gallery</span></h2><p>A glimpse of festive colours, lights and celebrations.</p></div>
+    <div class="gallery-grid">
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1600&q=85" aria-label="Open festive lights image"><img loading="lazy" src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=700&q=80" alt="Warm decorative festival lights"/><span>Festive Lights</span></button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1600&q=85" aria-label="Open colourful celebration image"><img loading="lazy" src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=700&q=80" alt="Colourful festival decorations"/><span>Colourful Celebrations</span></button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1606293926075-69a00db81268?auto=format&fit=crop&w=1600&q=85" aria-label="Open diya image"><img loading="lazy" src="https://images.unsplash.com/photo-1606293926075-69a00db81268?auto=format&fit=crop&w=700&q=80" alt="Traditional diya and festive decor"/><span>Traditional Decor</span></button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1600&q=85" aria-label="Open party decorations image"><img loading="lazy" src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=700&q=80" alt="Party balloons and decorations"/><span>Party Supplies</span></button>
+    </div>
+  </section>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden><button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button><img id="lightboxImage" alt="Expanded gallery image"/></div>
+
+  <!-- ============ STORE LOCATION ============ -->
+  <section id="location" class="location-section">
+    <div class="section-header" data-aos="fade-up"><span class="section-tag">Visit Us</span><h2>Find Our <span class="accent">Store</span></h2><p>Saraimeer, Azamgarh, Uttar Pradesh, India</p></div>
+    <div class="map-card"><div><h3><i class="fas fa-location-dot"></i> Adarsh Enterprise</h3><p>Chwok, Saraimeer, Azamgarh, Uttar Pradesh</p><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Adarsh+Enterprise+Saraimeer+Azamgarh" target="_blank" rel="noopener">Get Directions <i class="fas fa-arrow-up-right-from-square"></i></a></div><iframe title="Map around Saraimeer, Azamgarh" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Saraimeer%2C%20Azamgarh%2C%20Uttar%20Pradesh&output=embed"></iframe></div>
   </section>
 
   <!-- ============ CONTACT SECTION ============ -->
