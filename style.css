@@ -1476,7 +1476,7 @@ body[data-theme="eid"] .hero-bg-pattern {
   #home.hero > .hero-content {
     margin-left: 0 !important;
     margin-right: auto !important;
-    transform: translateX(-100px) !important;
+    transform: translateX(-50px) !important;
     text-align: left !important;
   }
 
