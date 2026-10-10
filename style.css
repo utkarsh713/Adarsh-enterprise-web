@@ -1489,9 +1489,12 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
-/* Hide only hero buttons on mobile */
-@media screen and (max-width: 768px) {
-  #home .hero-buttons {
+
+/* MOBILE/TABLET: completely hide hero CTA buttons */
+@media screen and (max-width: 900px) {
+  #home .hero-buttons,
+  #home .hero-content .hero-buttons,
+  #home .hero-buttons a {
     display: none !important;
   }
 }
