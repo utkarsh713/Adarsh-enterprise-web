@@ -1367,7 +1367,28 @@ body[data-theme="eid"] .hero-bg-pattern {
     text-align: center !important;
   }
 }
+/* ===== HERO CONTENT: SLIGHTLY LEFT ===== */
 
+@media (min-width: 769px) {
+  #home .hero-content {
+    transform: translateX(-45px) !important;
+  }
+
+  #home .hero-stats {
+    left: calc(50% - 45px) !important;
+  }
+}
+
+/* Mobile par content center hi rahe */
+@media (max-width: 768px) {
+  #home .hero-content {
+    transform: none !important;
+  }
+
+  #home .hero-stats {
+    left: 50% !important;
+  }
+}
    
 
 
