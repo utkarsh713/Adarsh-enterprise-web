@@ -1206,3 +1206,9 @@ body[data-theme="eid"] .hero-bg-pattern {
   .festive-burst-particle { display: none !important; animation: none !important; }
   .celebrate-button, #backToTop { transition: none !important; }
 }
+
+/* Remove the top scrolling progress line */
+#scrollProgress {
+  display: none !important;
+}
+
