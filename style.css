@@ -1478,6 +1478,22 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
+/* Move only hero content slightly left */
+@media (min-width: 769px) {
+  #home.hero > .hero-content {
+    margin-left: calc(clamp(48px, 8vw, 120px) - 35px) !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Keep mobile unchanged */
+@media (max-width: 768px) {
+  #home.hero > .hero-content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 
 
 
