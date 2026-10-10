@@ -244,7 +244,7 @@
     (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
   const burstPalette = {
     default: ["#85B8BC", "#BCE8E9", "#E7D6A2", "#F8FFFF"],
-    diwali: ["#E7D6A2", "#F8E7B6", "#BCE8E9", "#FFFFFF"],
+    diwali: ["#E7D6A2", "#F8E7B6", "#BCE8E9", "#FFFFFF"], 
     holi: ["#85B8BC", "#E7D6A2", "#BCE8E9", "#D8C6E8"],
     eid: ["#85B8BC", "#BCE8E9", "#E7D6A2", "#F8FFFF"]
   };
