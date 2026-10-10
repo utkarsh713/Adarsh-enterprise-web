@@ -1222,61 +1222,85 @@ body[data-theme="eid"] .hero-bg-pattern {
 }
 
 
-/* Keep complete hero content on the LEFT */
+
+/* ===== Balanced Hero Layout ===== */
+
+/* Desktop */
 @media (min-width: 769px) {
+  #home {
+    position: relative;
+  }
+
   #home .hero-content {
-    margin-left: 0 !important;
+    width: min(680px, 54vw);
+    max-width: 680px;
+    margin-left: clamp(35px, 5vw, 80px) !important;
     margin-right: auto !important;
-    text-align: left !important;
-    align-items: flex-start;
+    text-align: center !important;
+    align-items: center;
   }
 
   #home .hero-badge {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
   }
 
   #home .hero-title,
   #home .hero-tagline {
-    text-align: left !important;
+    text-align: center !important;
   }
 
   #home .hero-buttons {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
+  /* Keep statistics centered near the bottom */
   #home .hero-stats {
-    justify-content: flex-start !important;
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    transform: translateX(-50%);
+    width: min(700px, 85vw);
+    margin: 0 !important;
+    justify-content: center !important;
+    gap: clamp(20px, 4vw, 48px);
   }
 }
 
-/* Keep mobile content LEFT-aligned too */
+/* Mobile: natural flow, no overlap */
 @media (max-width: 768px) {
   #home .hero-content {
-    margin-left: 0 !important;
+    width: 100%;
+    max-width: 590px;
+    margin-left: auto !important;
     margin-right: auto !important;
-    text-align: left !important;
+    text-align: center !important;
+    align-items: center;
   }
 
   #home .hero-badge {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
-    font-size: 0.75rem;
   }
 
   #home .hero-title,
   #home .hero-tagline {
-    text-align: left !important;
+    text-align: center !important;
   }
 
   #home .hero-buttons {
-    justify-content: flex-start !important;
+    justify-content: center !important;
   }
 
   #home .hero-stats {
-    justify-content: flex-start !important;
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 25px auto 0 !important;
+    justify-content: center !important;
   }
 }
+
 
 
 
