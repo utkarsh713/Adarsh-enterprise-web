@@ -1490,14 +1490,72 @@ body[data-theme="eid"] .hero-bg-pattern {
 }
 
 
-/* MOBILE/TABLET: completely hide hero CTA buttons */
-@media screen and (max-width: 900px) {
+/* ===== FINAL MOBILE HERO FIX ===== */
+@media screen and (max-width: 768px) {
+
+  /* Remove Explore Now and Contact Us only on mobile */
   #home .hero-buttons,
-  #home .hero-content .hero-buttons,
+  #home .hero-buttons .btn,
   #home .hero-buttons a {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Keep hero content clear and add space for stats */
+  #home.hero {
+    position: relative !important;
+    padding-bottom: 25px !important;
+  }
+
+  #home .hero-content {
+    padding-bottom: 105px !important;
+  }
+
+  /* Move all three stats lower, centered in one row */
+  #home.hero .hero-stats {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 18px !important;
+    transform: translateX(-50%) !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: calc(100% - 28px) !important;
+    max-width: 520px !important;
+    margin: 0 !important;
+    padding: 10px 6px !important;
+    gap: 6px !important;
+    box-sizing: border-box !important;
+    z-index: 5 !important;
+  }
+
+  #home.hero .hero-stats .stat {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    text-align: center !important;
+  }
+
+  #home.hero .hero-stats .stat-num {
+    font-size: clamp(1.1rem, 4.8vw, 1.55rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  #home.hero .hero-stats .stat-label {
+    font-size: clamp(0.46rem, 1.9vw, 0.64rem) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
   }
 }
+
 
 
    
