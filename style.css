@@ -1221,62 +1221,60 @@ body[data-theme="eid"] .hero-bg-pattern {
   display: none !important;
 }
 
-/* Move complete hero content to the right */
+
+/* Keep complete hero content on the LEFT */
 @media (min-width: 769px) {
   #home .hero-content {
-    margin-left: auto !important;
-    margin-right: 5% !important;
-    text-align: right !important;
-    align-items: flex-end;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    text-align: left !important;
+    align-items: flex-start;
   }
 
   #home .hero-badge {
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: auto;
   }
 
-  #home .hero-title {
-    text-align: right !important;
-  }
-
+  #home .hero-title,
   #home .hero-tagline {
-    text-align: right !important;
+    text-align: left !important;
   }
 
   #home .hero-buttons {
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
   }
 
   #home .hero-stats {
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
   }
 }
 
-/* Keep mobile layout readable */
+/* Keep mobile content LEFT-aligned too */
 @media (max-width: 768px) {
   #home .hero-content {
-    margin-left: auto !important;
-    margin-right: 0 !important;
-    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    text-align: left !important;
   }
 
   #home .hero-badge {
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: auto;
     font-size: 0.75rem;
   }
 
   #home .hero-title,
   #home .hero-tagline {
-    text-align: right !important;
+    text-align: left !important;
   }
 
   #home .hero-buttons {
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
   }
 
   #home .hero-stats {
-    justify-content: flex-end !important;
+    justify-content: flex-start !important;
   }
 }
 
