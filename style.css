@@ -1299,6 +1299,85 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
+/* Fix hero stats: move them below buttons and center them */
+@media (min-width: 769px) {
+  #home .hero-content {
+    padding-bottom: 125px !important;
+  }
+
+  #home .hero-stats {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 28px !important;
+    transform: translateX(-50%) !important;
+
+    width: min(720px, 90vw) !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: clamp(24px, 4vw, 56px) !important;
+    z-index: 3 !important;
+  }
+
+  #home .hero-stats .stat {
+    flex: 0 1 190px;
+    min-width: 0;
+    text-align: center !important;
+  }
+
+  #home .hero-stats .stat-num {
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  #home .hero-stats .stat-label {
+    display: block;
+    line-height: 1.4;
+    white-space: normal;
+  }
+}
+
+/* Mobile: keep stats centered without overlap */
+@media (max-width: 768px) {
+  #home .hero-content {
+    padding-bottom: 0 !important;
+  }
+
+  #home .hero-stats {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin: 28px auto 0 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  #home .hero-stats .stat {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center !important;
+  }
+
+  #home .hero-stats .stat-num {
+    font-size: clamp(1.3rem, 5vw, 1.8rem) !important;
+    line-height: 1.2;
+  }
+
+  #home .hero-stats .stat-label {
+    font-size: clamp(0.55rem, 2.3vw, 0.7rem) !important;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+}
+
 
 
 
