@@ -1221,8 +1221,6 @@ body[data-theme="eid"] .hero-bg-pattern {
   display: none !important;
 }
 
-
-
 /* ===== Balanced Hero Layout ===== */
 
 /* Desktop */
@@ -1300,6 +1298,9 @@ body[data-theme="eid"] .hero-bg-pattern {
     justify-content: center !important;
   }
 }
+
+
+
 
 
 
