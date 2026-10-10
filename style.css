@@ -1557,30 +1557,7 @@ body[data-theme="eid"] .hero-bg-pattern {
 }
 
 
-/* FINAL FIX: stats lower on mobile only */
-@media screen and (max-width: 768px) {
-  #home.hero .hero-content {
-    padding-bottom: 20px !important;
-  }
 
-  #home.hero .hero-stats {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-
-    width: calc(100% - 12px) !important;
-    margin: 85px auto 25px !important;
-
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-}
 
 
 
