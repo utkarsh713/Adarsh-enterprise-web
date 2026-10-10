@@ -1471,6 +1471,54 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
+/* ===== FINAL: HERO CONTENT LEFT SHIFT ===== */
+@media (min-width: 769px) {
+  #home.hero > .hero-content {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    transform: translateX(-100px) !important;
+    text-align: left !important;
+  }
+
+  #home.hero .hero-badge {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #home.hero .hero-title,
+  #home.hero .hero-tagline {
+    text-align: left !important;
+  }
+
+  #home.hero .hero-buttons {
+    justify-content: flex-start !important;
+  }
+}
+
+/* Mobile par center hi rahe */
+@media (max-width: 768px) {
+  #home.hero > .hero-content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    text-align: center !important;
+  }
+
+  #home.hero .hero-badge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #home.hero .hero-title,
+  #home.hero .hero-tagline {
+    text-align: center !important;
+  }
+
+  #home.hero .hero-buttons {
+    justify-content: center !important;
+  }
+}
+
    
 
 
