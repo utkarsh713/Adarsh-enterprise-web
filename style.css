@@ -1471,32 +1471,6 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 }
 
-/* Move only hero content slightly left */
-@media (min-width: 769px) {
-  #home.hero > .hero-content {
-    margin-left: calc(clamp(48px, 8vw, 120px) -25px) !important;
-    margin-right: auto !important;
-  }
-}
-
-/* Keep mobile unchanged */
-@media (max-width: 768px) {
-  #home.hero > .hero-content {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-/* Fix: slightly shift hero text and buttons left */
-@media (max-width: 768px) {
-  #home .hero-badge,
-  #home .hero-title,
-  #home .hero-tagline,
-  #home .hero-buttons {
-    position: relative !important;
-    left: -35px !important;
-  }
-}
 
 
 
