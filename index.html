@@ -328,13 +328,13 @@
 
     <button
       class="gallery-item"
-      data-full="Adarsh%201.png"
+      data-full="./Adarsh%201.png"
       aria-label="Open gallery image 1"
       type="button"
     >
       <img
         loading="lazy"
-        src="Adarsh%201.png"
+        src="./Adarsh%201.png"
         alt="Adarsh Enterprise festive collection image 1"
       />
       <span>Festive Collection</span>
@@ -342,13 +342,13 @@
 
     <button
       class="gallery-item"
-      data-full="Adarsh%202.png"
+      data-full="./Adarsh%202.png"
       aria-label="Open gallery image 2"
       type="button"
     >
       <img
         loading="lazy"
-        src="Adarsh%202.png"
+        src="./Adarsh%202.png"
         alt="Adarsh Enterprise festive collection image 2"
       />
       <span>Celebration Decor</span>
@@ -356,13 +356,13 @@
 
     <button
       class="gallery-item"
-      data-full="Adarsh%203.png"
+      data-full="./Adarsh%203.png"
       aria-label="Open gallery image 3"
       type="button"
     >
       <img
         loading="lazy"
-        src="Adarsh%203.png"
+        src="./Adarsh%203.png"
         alt="Adarsh Enterprise festive collection image 3"
       />
       <span>Festival Decorations</span>
@@ -370,13 +370,13 @@
 
     <button
       class="gallery-item"
-      data-full="Adarsh%204.png"
+      data-full="./Adarsh%204.png"
       aria-label="Open gallery image 4"
       type="button"
     >
       <img
         loading="lazy"
-        src="Adarsh%204.png"
+        src="./Adarsh%204.png"
         alt="Adarsh Enterprise party collection image 4"
       />
       <span>Party Collection</span>
@@ -384,6 +384,24 @@
 
   </div>
 </section>
+
+  <!-- Gallery lightbox: used by the existing script.js -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Gallery image preview"
+    hidden
+  >
+    <button
+      class="lightbox-close"
+      id="lightboxClose"
+      type="button"
+      aria-label="Close image preview"
+    >&times;</button>
+    <img id="lightboxImage" alt="Expanded gallery image" />
+  </div>
 
   <!-- ============ STORE LOCATION ============ -->
   <section id="location" class="location-section">
