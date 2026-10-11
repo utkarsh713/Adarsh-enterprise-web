@@ -1395,38 +1395,42 @@ body[data-theme="eid"] .hero-bg-pattern {
     letter-spacing: 0 !important;
   }
 }
-/* MOBILE: POSITION STATS AT THE BOTTOM OF HERO */
+/* MOBILE: PUSH STATS TO THE BOTTOM */
 @media screen and (max-width: 768px) {
 
   #home.hero {
     position: relative !important;
     min-height: 100svh !important;
-    height: 100svh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
     padding-bottom: 0 !important;
-    box-sizing: border-box !important;
   }
 
-  /* Remove the wrong positioning parent */
   #home.hero > .hero-content {
-    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-bottom: 0 !important;
   }
 
-  /* Anchor stats to the full hero section */
   #home.hero .hero-stats {
-    position: absolute !important;
-    top: auto !important;
-    bottom: 8px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
 
-    width: calc(100% - 36px) !important;
+    width: calc(100% - 24px) !important;
     max-width: 520px !important;
-    margin: 0 !important;
-    z-index: 50 !important;
+    margin: auto auto 12px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
   }
 
-  /* Hide hero buttons on mobile */
   #home.hero .hero-buttons {
     display: none !important;
   }
