@@ -22,7 +22,7 @@
 ## 🌐 Live Website
 
 <p align="center">
-  <a href="https://utkarsh713.github.io/Adarsh-enterprise-web/">
+  <a >
     <img src="https://img.shields.io/badge/Adarsh_Enterprise-Explore_the_Website-102B2E?style=for-the-badge&logo=github&logoColor=white" alt="Explore Adarsh Enterprise"/>
   </a>
 </p>
@@ -65,19 +65,6 @@ The website combines an attractive festive design with easy navigation to help c
 
 ---
 
-## 🎆 Festival Collections
-
-The website features collections for a variety of festivals and events.
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🪔_Diwali-Festival_Collection-E7A642?style=for-the-badge" alt="Diwali"/>
-  <img src="https://img.shields.io/badge/🎨_Holi-Colorful_Celebrations-ED6A8A?style=for-the-badge" alt="Holi"/>
-  <img src="https://img.shields.io/badge/🇮🇳_Independence_Day-Patriotic_Decor-138808?style=for-the-badge" alt="Independence Day"/>
-  <img src="https://img.shields.io/badge/🇮🇳_Republic_Day-Celebration_Supplies-FF9933?style=for-the-badge" alt="Republic Day"/>
-  <img src="https://img.shields.io/badge/🦚_Janmashtami-Traditional_Decor-6A5ACD?style=for-the-badge" alt="Janmashtami"/>
-  <img src="https://img.shields.io/badge/🌙_Eid-Festive_Decor-35777B?style=for-the-badge" alt="Eid"/>
-  <img src="https://img.shields.io/badge/🎡_Local_Mela-Events_&_Parties-C75B39?style=for-the-badge" alt="Local Mela"/>
-</p>
 
 - 🪔 Diwali
 - 🎨 Holi
