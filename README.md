@@ -16,9 +16,13 @@
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/JavaScript-Interactive-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 </p>
-🔗 **Website:** [https://utkarsh713.github.io/Adarsh-enterprise-web/](https://utkarsh713.github.io/Adarsh-enterprise-web/)
+🌐 Live Website
 
----
+<p align="center">
+  <a href="https://utkarsh713.github.io/Adarsh-enterprise-web/">
+    <img src="https://img.shields.io/badge/Adarsh_Enterprise-Explore_the_Website-102B2E?style=for-the-badge&logo=github&logoColor=white" alt="Explore Adarsh Enterprise"/>
+  </a>
+</p>
 
 ## 📖 About The Project
 
