@@ -1,4 +1,4 @@
-# 🎊 Adarsh Enterprise
+#  🎊 Adarsh Enterprise
 
 ### ✨ Your One-Stop Festival & Celebration Shop
 
@@ -77,24 +77,6 @@ The website combines a festive visual design with straightforward navigation to 
   </tr>
 </table>
 
----
-
-## 🎆 Festival Collections
-
-The website showcases collections for a variety of festivals and events:
-
-| Festival / Event | Theme |
-|---|---|
-| 🪔 Diwali | Lights, diyas, candles, and festive decorations |
-| 🎨 Holi | Colours, pichkaris, and party accessories |
-| 🇮🇳 Independence Day | Flags, banners, and patriotic decorations |
-| 🇮🇳 Republic Day | Tricolour decorations and celebration supplies |
-| 🦚 Janmashtami | Traditional decorations and festive accessories |
-| 🌙 Eid | Decorative lighting and celebration essentials |
-| 🎡 Local Mela & Events | Event decorations and party supplies |
-
----
-
 ## 🛍️ Product Categories
 
 - 🪔 Diyas & Candles
@@ -160,38 +142,6 @@ Adarsh-enterprise-web/
 └── README.md           # Project documentation
 ```
 
----
-
-## 🚀 Run Locally
-
-Want to explore or modify the project on your computer?
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/utkarsh713/Adarsh-enterprise-web.git
-```
-
-**2. Open the project folder**
-
-```bash
-cd Adarsh-enterprise-web
-```
-
-**3. Run the website**
-
-Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code for local development.
-
----
-
-## 🌍 Deployment
-
-This project is hosted using **GitHub Pages**.
-
-🔗 **Live URL:** https://utkarsh713.github.io/Adarsh-enterprise-web/
-
----
-
 ## 🔮 Future Improvements
 
 Potential enhancements for the project include:
@@ -202,40 +152,6 @@ Potential enhancements for the project include:
 - 📸 Expanded product gallery
 - ♿ Accessibility improvements
 - ⚡ Performance and loading optimizations
-
----
-
-## 👨‍💻 Developer
-
-**Utkarsh Barnwal**
-
-BCA (Hons.) Computer Science student at Galgotias University, interested in full-stack and backend engineering.
-
-I enjoy building practical applications and exploring technologies that connect frontend interfaces with backend systems.
-
-### 🧰 Additional Technical Interests
-
-Java · Object-Oriented Programming (OOP) · Data Structures · Spring Boot · REST APIs · React · Node.js
-
----
-
-## 🤝 Contributing
-
-Suggestions and improvements are welcome!
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a pull request with a description of your improvements.
-
----
-
-## 📄 License
-
-No license has been specified for this repository yet. Please contact the repository owner before reusing or redistributing the project.
-
----
-
 <p align="center">
   <strong>🎊 Adarsh Enterprise — Celebrate Every Occasion!</strong>
   <br/>
