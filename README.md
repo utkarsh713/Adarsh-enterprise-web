@@ -9,24 +9,13 @@
 </p>
 
 <p align="center">
-  <a href="https://utkarsh713.github.io/Adarsh-enterprise-web/">
+  <a>
     <img src="https://img.shields.io/badge/🌐_Live_Website-Visit_Now-85B8BC?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Website"/>
   </a>
   <img src="https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/JavaScript-Interactive-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 </p>
-
----
-
-## 🌐 Live Website
-
-<p align="center">
-  <a >
-    <img src="https://img.shields.io/badge/Adarsh_Enterprise-Explore_the_Website-102B2E?style=for-the-badge&logo=github&logoColor=white" alt="Explore Adarsh Enterprise"/>
-  </a>
-</p>
-
 🔗 **Website:** [https://utkarsh713.github.io/Adarsh-enterprise-web/](https://utkarsh713.github.io/Adarsh-enterprise-web/)
 
 ---
