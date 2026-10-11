@@ -1395,19 +1395,27 @@ body[data-theme="eid"] .hero-bg-pattern {
     letter-spacing: 0 !important;
   }
 }
-```css
-/* MOBILE: STATS AT THE VERY BOTTOM OF HERO */
+/* MOBILE: POSITION STATS AT THE BOTTOM OF HERO */
 @media screen and (max-width: 768px) {
+
   #home.hero {
     position: relative !important;
     min-height: 100svh !important;
+    height: 100svh !important;
     padding-bottom: 0 !important;
+    box-sizing: border-box !important;
   }
 
+  /* Remove the wrong positioning parent */
+  #home.hero > .hero-content {
+    position: static !important;
+  }
+
+  /* Anchor stats to the full hero section */
   #home.hero .hero-stats {
     position: absolute !important;
     top: auto !important;
-    bottom: 0 !important;
+    bottom: 8px !important;
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%) !important;
@@ -1417,5 +1425,9 @@ body[data-theme="eid"] .hero-bg-pattern {
     margin: 0 !important;
     z-index: 50 !important;
   }
+
+  /* Hide hero buttons on mobile */
+  #home.hero .hero-buttons {
+    display: none !important;
+  }
 }
-```
