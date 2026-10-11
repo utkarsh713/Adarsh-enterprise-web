@@ -1,14 +1,16 @@
-#  🎊 Adarsh Enterprise
-
-### ✨ Your One-Stop Festival & Celebration Shop
+# 🎊 Adarsh Enterprise | Festival & Celebration Shop
 
 <p align="center">
-  A modern, responsive business website showcasing festival decorations, party supplies, lighting, gifts, and celebration essentials.
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:102B2E,50:35777B,100:85B8BC&height=180&section=header&text=Adarsh%20Enterprise&fontSize=42&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn" width="100%" />
+</p>
+
+<p align="center">
+  <b>🪔 Festival Decorations | 🎉 Party Supplies | 🎁 Gifts & Celebrations</b>
 </p>
 
 <p align="center">
   <a href="https://utkarsh713.github.io/Adarsh-enterprise-web/">
-    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-85B8BC?style=for-the-badge" alt="Live Website"/>
+    <img src="https://img.shields.io/badge/🌐_Live_Website-Visit_Now-85B8BC?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Website"/>
   </a>
   <img src="https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
@@ -19,63 +21,73 @@
 
 ## 🌐 Live Website
 
-**Explore the website:** [Adarsh Enterprise — Live Demo](https://utkarsh713.github.io/Adarsh-enterprise-web/)
+<p align="center">
+  <a href="https://utkarsh713.github.io/Adarsh-enterprise-web/">
+    <img src="https://img.shields.io/badge/Adarsh_Enterprise-Explore_the_Website-102B2E?style=for-the-badge&logo=github&logoColor=white" alt="Explore Adarsh Enterprise"/>
+  </a>
+</p>
 
-Discover festival collections, browse product categories, explore the business location, and connect with the business through the website.
-
----
-
-## 📖 About the Project
-
-**Adarsh Enterprise** is a modern and responsive business website developed to showcase a wide range of festival decorations, party accessories, lighting, gifting products, and celebration essentials.
-
-The website combines a festive visual design with straightforward navigation to help customers explore collections and contact the business easily.
-
-### 🎯 Project Goals
-
-- 🎉 Showcase products for different festivals and celebrations.
-- 🛍️ Organize products into easy-to-explore categories.
-- 📱 Provide a smooth experience across desktop, tablet, and mobile devices.
-- 📍 Help visitors find business location information.
-- 💬 Make customer enquiries and WhatsApp contact easier.
-- ✨ Create an attractive and engaging online presence for the business.
+🔗 **Website:** [https://utkarsh713.github.io/Adarsh-enterprise-web/](https://utkarsh713.github.io/Adarsh-enterprise-web/)
 
 ---
 
-## ✨ Key Features
+## 📖 About The Project
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🏠 Hero Section</h3>
-      <p>Festive landing page with animated text, prominent branding, navigation buttons, and business statistics.</p>
-    </td>
-    <td width="50%">
-      <h3>🎆 Festival Collections</h3>
-      <p>Dedicated sections for festivals and events, with collection details and enquiry options.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🛍️ Product Categories</h3>
-      <p>Organized categories for decorations, lighting, gifts, party supplies, and accessories.</p>
-    </td>
-    <td width="50%">
-      <h3>📱 Responsive Design</h3>
-      <p>Responsive layouts designed for mobile phones, tablets, laptops, and desktop screens.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>✨ Animations & Effects</h3>
-      <p>Interactive elements, visual effects, and scroll animations for a more engaging experience.</p>
-    </td>
-    <td width="50%">
-      <h3>📞 Contact & Enquiries</h3>
-      <p>Contact details, location information, and an enquiry form for customer requirements.</p>
-    </td>
-  </tr>
-</table>
+**Adarsh Enterprise** is a modern, responsive business website created to showcase festival decorations, party accessories, lighting, gifts, and celebration essentials.
+
+The website combines an attractive festive design with easy navigation to help customers explore collections, discover product categories, find business information, and make enquiries.
+
+### 🎯 Project Highlights
+
+- 🎉 Explore festival collections and celebration products.
+- 🛍️ Browse different product categories.
+- 📍 Find business location information.
+- 📞 Access contact details and enquiry options.
+- 💬 Connect through WhatsApp.
+- 📱 Enjoy a responsive experience across different devices.
+
+---
+
+## ✨ Features
+
+- 🏠 Attractive festival-themed hero section
+- 🎆 Festival collections for different celebrations
+- 🛍️ Organized product categories
+- 📱 Responsive and mobile-friendly design
+- ✨ Animated typing text and visual effects
+- 🎨 Modern teal-themed user interface
+- 🎊 Interactive festive elements
+- 📞 Contact and business information
+- 📝 Customer enquiry form
+- 📍 Location and working-hours information
+- 🔗 Contact and social links
+- 🚀 GitHub Pages deployment
+
+---
+
+## 🎆 Festival Collections
+
+The website features collections for a variety of festivals and events.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🪔_Diwali-Festival_Collection-E7A642?style=for-the-badge" alt="Diwali"/>
+  <img src="https://img.shields.io/badge/🎨_Holi-Colorful_Celebrations-ED6A8A?style=for-the-badge" alt="Holi"/>
+  <img src="https://img.shields.io/badge/🇮🇳_Independence_Day-Patriotic_Decor-138808?style=for-the-badge" alt="Independence Day"/>
+  <img src="https://img.shields.io/badge/🇮🇳_Republic_Day-Celebration_Supplies-FF9933?style=for-the-badge" alt="Republic Day"/>
+  <img src="https://img.shields.io/badge/🦚_Janmashtami-Traditional_Decor-6A5ACD?style=for-the-badge" alt="Janmashtami"/>
+  <img src="https://img.shields.io/badge/🌙_Eid-Festive_Decor-35777B?style=for-the-badge" alt="Eid"/>
+  <img src="https://img.shields.io/badge/🎡_Local_Mela-Events_&_Parties-C75B39?style=for-the-badge" alt="Local Mela"/>
+</p>
+
+- 🪔 Diwali
+- 🎨 Holi
+- 🇮🇳 Independence Day
+- 🇮🇳 Republic Day
+- 🦚 Janmashtami
+- 🌙 Eid
+- 🎡 Local Mela & Events
+
+---
 
 ## 🛍️ Product Categories
 
@@ -91,42 +103,53 @@ The website combines a festive visual design with straightforward navigation to 
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| 🌐 HTML5 | Page structure and content |
-| 🎨 CSS3 | Styling, layouts, and responsive design |
-| ⚡ JavaScript | Interactive elements and functionality |
-| 🎞️ AOS | Scroll animations |
-| 🎯 Font Awesome | Icons and visual elements |
-| 🚀 GitHub Pages | Website hosting and deployment |
+### 💻 Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js" alt="HTML CSS JavaScript"/>
+</p>
+
+### 🔧 Libraries & Tools
+
+<p>
+  <img src="https://img.shields.io/badge/AOS-Scroll_Animations-85B8BC?style=for-the-badge" alt="AOS"/>
+  <img src="https://img.shields.io/badge/Font_Awesome-Icons-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white" alt="Font Awesome"/>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" alt="Git GitHub VS Code"/>
+</p>
+
+### 🚀 Hosting
+
+<p>
+  <img src="https://img.shields.io/badge/GitHub_Pages-Live_Deployment-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages"/>
+</p>
 
 ---
 
-## 📱 Responsive Experience
+## 📱 Responsive Design
 
-The interface is designed to adapt to different screen sizes.
+The website is designed to provide an accessible browsing experience across:
 
 - 💻 Desktop
 - 💻 Laptop
 - 📱 Mobile
 - 📟 Tablet
 
-The goal is to keep navigation, content, and product discovery accessible across devices.
+The responsive layout helps visitors explore festival collections and product categories on different screen sizes.
 
 ---
 
 ## 📞 Customer Contact Features
 
-The website provides access to relevant business information and enquiry options, including:
+The website provides access to business information and enquiry options, including:
 
-- 📱 Phone contact
+- 📱 Phone
 - 💬 WhatsApp
 - 📧 Email
-- 📍 Business location
-- 🕐 Working hours
-- 📝 Customer enquiry form
+- 📍 Business Location
+- 🕐 Working Hours
+- 📝 Customer Enquiry Form
 
-*Availability depends on the corresponding links and functionality configured in the website.*
+*Available functionality depends on the contact links and features configured on the website.*
 
 ---
 
@@ -136,24 +159,31 @@ The website provides access to relevant business information and enquiry options
 Adarsh-enterprise-web/
 │
 ├── index.html          # Website structure
-├── style.css           # Styling and responsive layouts
+├── style.css           # Styling and responsive design
 ├── script.js           # Interactive functionality
 ├── Adarsh.png          # Main festive background image
 └── README.md           # Project documentation
 ```
 
-## 🔮 Future Improvements
+---
 
-Potential enhancements for the project include:
+## 🔮 Future Improvements
 
 - 🛒 Product search and filtering
 - 🧾 Detailed product pages
-- 📦 Product enquiry and order workflow
+- 📦 Improved product enquiry and ordering workflow
 - 📸 Expanded product gallery
 - ♿ Accessibility improvements
-- ⚡ Performance and loading optimizations
+- ⚡ Performance optimization
+
+---
+
 <p align="center">
-  <strong>🎊 Adarsh Enterprise — Celebrate Every Occasion!</strong>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:102B2E,50:35777B,100:85B8BC&height=120&section=footer" width="100%" />
+</p>
+
+<p align="center">
+  <b>🎊 Adarsh Enterprise — Celebrate Every Occasion!</b>
   <br/>
-  <sub>Designed to bring festival collections and celebration essentials closer to customers.</sub>
+  <sub>✨ Bringing festival collections and celebration essentials closer to customers.</sub>
 </p>
