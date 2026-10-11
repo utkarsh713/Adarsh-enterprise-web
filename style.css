@@ -1514,18 +1514,34 @@ body[data-theme="eid"] .hero-bg-pattern {
   }
 
  
+```css
 /* ==========================================
-   ADARSH ENTERPRISE — FINAL HERO POSITION FIX
-   Desktop: Hero content more to the left
-   Mobile: Stats moved further down
+   ADARSH ENTERPRISE — HERO POSITION FIX
+   Desktop: Content shifted to the left
+   Mobile: Stats positioned at the bottom
    ========================================== */
 
 
-/* ===== DESKTOP: MOVE HERO CONTENT MORE LEFT ===== */
+/* ==========================================
+   DESKTOP — MOVE HERO CONTENT LEFT
+   ========================================== */
 @media screen and (min-width: 769px) {
+
+  #home.hero {
+    position: relative !important;
+  }
+
   #home.hero > .hero-content {
-    margin-left: calc(clamp(48px, 8vw, 120px) - 80px) !important;
+    position: relative !important;
+    left: -90px !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
+    text-align: left !important;
+    transform: none !important;
+  }
+
+  #home.hero .hero-title,
+  #home.hero .hero-tagline {
     text-align: left !important;
   }
 
@@ -1535,14 +1551,17 @@ body[data-theme="eid"] .hero-bg-pattern {
 }
 
 
-/* ===== MOBILE: HERO LAYOUT ===== */
+/* ==========================================
+   MOBILE — HERO LAYOUT
+   ========================================== */
 @media screen and (max-width: 768px) {
 
   #home.hero {
     position: relative !important;
     min-height: 100svh !important;
-    padding: 110px 18px 10px !important;
+    padding: 100px 14px 0 !important;
     overflow: hidden !important;
+    box-sizing: border-box !important;
   }
 
   #home.hero > .hero-content {
@@ -1551,49 +1570,55 @@ body[data-theme="eid"] .hero-bg-pattern {
     width: 100% !important;
     max-width: 590px !important;
     margin: 0 auto !important;
-    padding: 0 0 115px !important;
+    padding: 0 0 120px !important;
     text-align: center !important;
+    transform: none !important;
     animation: none !important;
   }
 
-  /* Hide hero buttons on mobile */
+  /* Hide buttons on mobile */
   #home .hero-buttons,
   #home .hero-buttons .btn,
   #home .hero-buttons a {
     display: none !important;
   }
 
-  /* Keep heading centered */
+  /* Heading */
   #home.hero .hero-title {
     text-align: center !important;
-    font-size: clamp(2.8rem, 10vw, 4rem) !important;
+    font-size: clamp(2.6rem, 10vw, 4rem) !important;
     line-height: 1.08 !important;
   }
 
+  /* Tagline */
   #home.hero .hero-tagline {
     text-align: center !important;
-    margin-bottom: 26px !important;
+    margin-bottom: 20px !important;
   }
 
-  /* ===== MOVE STATS LOWER ON PHONE ===== */
+
+  /* ==========================================
+     MOBILE STATS — LOWER POSITION
+     ========================================== */
   #home.hero .hero-stats {
     position: absolute !important;
+
     left: 50% !important;
     right: auto !important;
     top: auto !important;
-
-    /* Lower value = closer to the bottom */
-    bottom: 2px !important;
+    bottom: 0 !important;
 
     transform: translateX(-50%) !important;
+
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
     justify-content: center !important;
 
-    width: calc(100% - 24px) !important;
+    width: calc(100% - 20px) !important;
     max-width: 520px !important;
+
     margin: 0 !important;
     padding: 10px 5px !important;
     gap: 5px !important;
@@ -1602,20 +1627,25 @@ body[data-theme="eid"] .hero-bg-pattern {
     background: rgba(4, 38, 40, 0.55) !important;
     border: 1px solid rgba(190, 231, 231, 0.2) !important;
     border-radius: 14px !important;
+
     z-index: 5 !important;
     animation: none !important;
   }
 
+  /* Each stat */
   #home.hero .hero-stats .stat {
     display: flex !important;
     flex: 1 1 0 !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important;
+
     min-width: 0 !important;
     margin: 0 !important;
     text-align: center !important;
   }
 
+  /* Dividers */
   #home.hero .hero-stats .stat-divider {
     display: block !important;
     flex: 0 0 1px !important;
@@ -1624,12 +1654,14 @@ body[data-theme="eid"] .hero-bg-pattern {
     margin: 0 !important;
   }
 
+  /* Numbers */
   #home.hero .hero-stats .stat-num {
     font-size: clamp(1.15rem, 5vw, 1.6rem) !important;
     line-height: 1.15 !important;
     margin: 0 0 4px !important;
   }
 
+  /* Labels */
   #home.hero .hero-stats .stat-label {
     font-size: clamp(0.48rem, 2vw, 0.65rem) !important;
     line-height: 1.3 !important;
@@ -1638,7 +1670,7 @@ body[data-theme="eid"] .hero-bg-pattern {
     text-align: center !important;
   }
 }
-
+```
 
 
 
