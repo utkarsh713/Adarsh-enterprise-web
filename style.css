@@ -1395,3 +1395,27 @@ body[data-theme="eid"] .hero-bg-pattern {
     letter-spacing: 0 !important;
   }
 }
+```css
+/* MOBILE: STATS AT THE VERY BOTTOM OF HERO */
+@media screen and (max-width: 768px) {
+  #home.hero {
+    position: relative !important;
+    min-height: 100svh !important;
+    padding-bottom: 0 !important;
+  }
+
+  #home.hero .hero-stats {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+
+    width: calc(100% - 36px) !important;
+    max-width: 520px !important;
+    margin: 0 !important;
+    z-index: 50 !important;
+  }
+}
+```
